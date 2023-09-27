@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #262626;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 15px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0077e6;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            border-top: 1px solid #ccc;
+        }
+
+        .divider::before {
+            margin-right: 20px;
+        }
+
+        .divider::after {
+            margin-left: 20px;
+        }
+
+        .or {
+            color: #8e8e8e;
+        }
+
+        .social-login {
+            margin-top: 20px;
+        }
+
+        .social-button {
+            display: inline-block;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .social-button img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+    <div class="container">
+        <h2>Instagram</h2>
+        <input type="text" placeholder="Username or Email">
+        <input type="password" placeholder="Password">
+        <label>
+            <input type="checkbox" name="rememberMe"> Remember Me
+        </label>
+        <button>Login</button>
+        <div class="divider">
+            <span class="or">OR</span>
+        </div>
+        <div class="social-login">
+            <!-- <button class="social-button"><img src="facebook-icon.png" alt="Facebook"></button> -->
+            <!-- <button class="social-button"><img src="google-icon.png" alt="Google"></button> -->
+        </div>
+    </div>
+</body>
+</html>

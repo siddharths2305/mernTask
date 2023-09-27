@@ -1,0 +1,31 @@
+input tag
+Attributes
+a. type
+    1. text
+    2. password
+    3. number
+    4. email
+    5. tel
+    6. search
+    7. url
+    8. date
+    9. week
+    10. month
+    11. time
+    12. datetime-locale
+    13. color
+    14. range
+    15. button
+    16. submit
+    17. reset
+    18. checkbox
+    19. radio
+    20. file
+<input type="" />
+
+firstname text
+age number
+gender radio
+language known checkbox
+dob date
+

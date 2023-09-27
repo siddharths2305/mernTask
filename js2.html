@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabetical Sort</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alphabetical Sort</h1>
+    <label for="inputString">Enter a string: </label>
+    <input type="text" id="inputString">
+    <button onclick="sortString()">Sort</button>
+    <p id="output"></p>
+
+    <script>
+        function sortString() {
+            const inputString = document.getElementById("inputString").value;
+
+            // Check if the input is not empty
+            if (inputString.trim() !== "") {
+                const sortedString = inputString.split('').sort().join('');
+
+                document.getElementById("output").textContent = "Sorted String: " + sortedString;
+            } else {
+                document.getElementById("output").textContent = "Please enter a string.";
+            }
+        }
+    </script>
+</body>
+</html>
